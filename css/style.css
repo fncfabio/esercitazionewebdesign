@@ -1,0 +1,619 @@
+body{
+    margin: 0px;
+    font-family: "Leelawadee UI";
+    /*overflow-x: hidden;*/
+    width: 100%;
+}
+
+header{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    text-align: center;
+    max-width: 100%;
+    align-items: center;
+  }
+
+a{
+  text-decoration: none;
+}
+
+header a.attivo{
+  font-weight: bold;
+}
+
+h1{
+    font-family: "Leelawadee UI";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+p{
+    font-family: "Leelawadee UI";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+header h1{
+    color: white;
+    font-family: "Leelawadee UI";
+    text-transform: uppercase;
+    margin: 0px;
+}
+
+header nav ul a {
+    text-decoration: none;
+    color: #FFF;
+    font-size: 32px;
+    font-style: normal;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin: 0px;
+}
+
+.photoherosection{
+    max-width: 100%;
+    height: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    position: relative;
+}
+
+.photoherosection img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .infoherosection{
+    width: 60%;
+    position: absolute;
+    top: 70%;
+    background-color: #FFF;
+    padding: 20px;
+  }
+
+  .infoherosection h1{
+    color: #000;
+    font-family: "Leelawadee UI";
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: auto;
+    margin-top: 0px;
+  }
+
+  .infoherosection .info1{
+    color: #000;
+    font-family: "Leelawadee UI";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 350;
+    line-height: normal;
+    margin: auto;
+  }
+
+  .infoherosection .info2{
+    color: #000;
+    font-family: "Leelawadee UI";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 350;
+    line-height: normal;
+    margin: auto;
+    margin-bottom: 0px;
+  }
+
+  .infomostra{
+    height: 500px;
+    background-color: #000;
+    color: #FFF;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .infoartisti{
+    background-color: white;
+    color:black;
+    padding: 100px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  
+
+  .infomostra p, .infoartisti p, .mostra p{
+    width: 60%;
+  }
+  
+  .infomostra p.continua{
+    width: 60%;
+    font-size: 20px;
+    font-style:bold;
+    font-weight: 700;
+    line-height: normal;
+    color: #FFF;
+  }
+
+  section.scorrimentoartisti{
+    background-color:black;
+    color: white;
+    height: 100px;
+    /*display: block; necessario per gli elementi inline-block contenuti*/
+    width: 100%;
+    display: flex;
+    align-items: center;
+    white-space: nowrap; /*non andare a capo*/
+    overflow: hidden; /*nascondi overflow*/
+    justify-content: space-around;
+  }
+
+  @keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+  }
+
+
+  section.scorrimentoartisti p.animazione1{
+    display: inline-block; /*assume proprietà inline e block*/
+    padding-left: 100%;
+    animation: scroll 20s linear infinite;
+  }
+
+  section.img div.riga{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    padding: 40px;
+  }
+
+  #riga1{
+    padding-bottom: 20px;
+  }
+
+   #riga2 {
+    background-color: #000;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+  #riga3{
+    padding-top: 20px;
+  }
+
+  section.img div.riga img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;   
+  }
+
+  footer{
+    background-color: #000;
+    color: #FFF;
+    margin-top: 50px;
+  }
+
+  .elementifooter{
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    padding: 20px;
+    width: 80%;
+    gap: 32px;
+  }
+
+  footer nav ul li a{
+    text-decoration: none;
+    color: #FFF;
+  }
+
+  footer nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 15px;
+    margin: auto;
+    padding: 0px;
+}
+
+footer h1{
+  margin: 0px;
+}
+
+footer .linea{
+  background-color: #FFF;
+  width: 1px;
+  height: 200px;
+}
+
+.infofooter {
+  border-right: 2px solid white;
+  width: 33%;
+}
+
+.infofooter:last-child {
+  border: none;
+}
+
+#indexinfoartisti{
+  padding-bottom: 100px;
+}
+.cardartisti{
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: 3fr 3fr 3fr;
+  gap: 50px;
+  margin: 20px;
+  place-items: center;
+}
+
+.cardartisti a{
+  width: 100%;
+}
+
+.card{
+  background-color: #000;
+  width: 100%;
+  height: 561px;
+}
+
+.card img{
+  width: 100%;
+  height: 90%;
+  object-fit: cover;   
+}
+
+.card p{
+  height: 44.88px;
+  color: #FFF;
+  margin: 0px;
+  font-family: "Leelawadee UI";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding: 10px;
+}
+
+#doveinfo, #labinfo{
+  padding: 100px 20px 20px 20px;
+}
+
+#mostrainfo{
+  padding-top: 100px;
+}
+
+
+main.mostra{
+  padding-left: 20px;
+}
+
+.infocover{
+ width: 100%;
+ height: 1000px;
+ background-color: #000;
+}
+
+.infocover p {
+  color: #FFF;
+  font-family: "Leelawadee UI";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 350;
+  line-height: normal;
+  padding: 20px 20px 20px 20px;
+  margin: 0px;
+  
+}
+
+#labinfo p{
+  padding: 20px 20px 20px 20px;
+  font-family: "Leelawadee UI";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 350;
+  line-height: normal;
+  padding: 20px 20px 20px 20px;
+  margin: 0px;
+}
+
+
+.infocover img{
+  width: 100%;
+  height: 90%;
+  object-fit: cover;
+}
+
+.labinfo{
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 350;
+  line-height: normal;
+  padding-left: 20px;
+  margin: 0px;
+  width: 60%;
+}
+
+.infoartista{
+  padding: 100px 20px 20px 20px;
+}
+
+.infoartista p {
+  width: 60%;
+}
+
+.h1gallery{
+  margin-top: 150px;
+}
+
+.gallery .riga{
+  display: grid;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+.gallery img{
+  object-fit: cover;
+  width: 100%;
+  height: 700px;
+}
+
+.gallery #riga1{
+grid-template-columns: 1fr 2fr 1fr;
+padding: 0px;
+}
+.gallery #riga2{
+  grid-template-columns: 2fr 1fr;
+  padding: 0px;
+}
+.gallery #riga3{
+  grid-template-columns: 1fr 2fr;
+  padding: 0px;
+}
+
+footer.galleryfooter{
+  margin-top: 0px;
+}
+
+.hamburger-lines {
+  display: none;
+  height: 26px;
+  width: 32px;
+  position: absolute;
+  top: 18px;
+  right: 20px;
+  z-index: 2;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hamburger-lines .line {
+  display: block;
+  height: 4px;
+  width: 100%;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.hamburger-lines .line1 {
+  transform-origin: 0% 0%;
+  transition: transform 0.4s ease-in-out;
+}
+.hamburger-lines .line2 {
+  transition: transform 0.2s ease-in-out;
+}
+
+.hamburger-lines .line3 {
+  transform-origin: 0% 100%;
+  transition: transform 0.4s ease-in-out;
+}
+
+input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+  transform: rotate(45deg);
+}
+
+input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+  transform: scaleY(0);
+}
+
+input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+  transform: rotate(-45deg);
+}
+
+.checkbox {
+  position: absolute;
+  display: none;
+  height: 32px;
+  width: 32px;
+  top: 16x;
+  right: 16px;
+  z-index: 5;
+  opacity: 0;
+  cursor: pointer;
+}
+
+
+
+@media screen and (max-width:1000px) {
+  
+  
+  .card{
+    background-color: #000;
+    width: 100%;
+    height: 361px;
+  }
+
+  .card p{
+    font-size: 12px; 
+  }
+  .infoherosection, .infomostra p, .infoartisti p, .mostra p, .labinfo, .infoartista p {
+    width: 80%;
+  }
+
+  header nav ul a {
+    font-size: 24px;  
+}
+
+header nav ul{
+  gap: 10px;
+}
+
+h1{
+  font-family: "Leelawadee UI";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.elementifooter{
+  width: 100%;
+  padding: 20px 0px;
+}
+
+.gallery img{
+  height: 500px;
+}
+
+}
+
+@media screen and (max-width:600px) {
+
+  h1{
+    font-size: 24px;
+  }
+
+  p, .labinfo{
+    font-size: 12px;
+  }
+
+  .elementifooter {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  header {
+    flex-direction: column;
+    background-color: #000;
+    }
+
+  header h1{
+    z-index: 4;
+  }
+
+  .elementifooter {
+    flex-direction: column;
+    gap: 32px;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+
+  .infofooter {
+    border-right: 0px;
+    width: 33%;
+  }
+
+  .gallery img{
+    height: 300px;
+  }
+
+
+  .cardartisti{
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+  }
+
+  .infocover img{
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+  }
+  
+  .infocover{
+    width: 100%;
+    height: 500px;
+    background-color: #000;
+   }
+
+   .infoherosection h1{
+    font-size: 24px;
+   }
+
+   .infoherosection p.info1, p.info2{
+    font-size: 12px;
+   }
+
+   .photoherosection{
+    max-width: 100%;
+    height: 300px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.photoherosection img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .infoherosection{
+    width: 60%;
+    background-color: #FFF;
+    padding: 20px;
+    position: relative;
+  }
+  .hamburger-lines {
+    display: flex;
+  }
+  .checkbox {
+    display: block;
+  }
+
+  header nav ul{
+    gap: 10px;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    opacity: 0;
+    background-color:black;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    z-index: 2;
+    padding: 0px;
+    overflow-y: hidden;
+  }
+
+  input[type="checkbox"]:checked ~ nav ul {
+    opacity: 100;
+    overflow: hidden;
+  }
+
+  .hamburger-lines {
+    display: flex;
+    z-index: 3;
+  }
+
+  ul li {
+    display: block;
+  }
+
+}
