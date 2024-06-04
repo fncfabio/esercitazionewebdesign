@@ -1,6 +1,6 @@
 body{
     margin: 0px;
-    font-family: "leelawadee-ui", sans-serif;
+    font-family: "Leelawadee Ui", sans-serif;
     /*overflow-x: hidden;*/
     width: 100%;
 }
@@ -24,7 +24,7 @@ header a.attivo{
 }
 
 h1{
-    font-family: "leelawadee-ui", sans-serif;
+    font-family: "Leelawadee Ui", sans-serif;
     font-size: 36px;
     font-style: normal;
     font-weight: 700;
@@ -32,7 +32,7 @@ h1{
 }
 
 p{
-    font-family: "leelawadee-ui", sans-serif;
+    font-family: "Leelawadee Ui", sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -41,7 +41,7 @@ p{
 
 header h1{
     color: white;
-    font-family: "leelawadee-ui", sans-serif;
+    font-family: "Leelawadee Ui", sans-serif;
     text-transform: uppercase;
     margin: 0px;
 }
@@ -85,7 +85,7 @@ header nav ul {
 
   .infoherosection h1{
     color: #000;
-    font-family: "leelawadee-ui", sans-serif;
+    font-family: "Leelawadee Ui", sans-serif;
     font-size: 64px;
     font-style: normal;
     font-weight: 700;
@@ -96,7 +96,7 @@ header nav ul {
 
   .infoherosection .info1{
     color: #000;
-    font-family: "leelawadee-ui", sans-serif;
+    font-family: "Leelawadee Ui", sans-serif;
     font-size: 48px;
     font-style: normal;
     font-weight: 350;
@@ -106,7 +106,7 @@ header nav ul {
 
   .infoherosection .info2{
     color: #000;
-    font-family: "leelawadee-ui", sans-serif;
+    font-family: "Leelawadee Ui", sans-serif;
     font-size: 24px;
     font-style: normal;
     font-weight: 350;
